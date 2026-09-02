@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // Aplica el modo oscuro solo si el usuario ya lo eligió antes
+      (function () {
+        try {
+          if (localStorage.getItem("theme") === "dark") {
+            document.documentElement.classList.add("dark-mode");
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alejandro García | CV</title>
+    <meta name="description" content="Alejandro García — IT Analyst orientado a datos, con formación en tecnología, contabilidad y auditoría. 18 años de experiencia en Telecom Personal Argentina." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Google Analytics 4 -->
+    <!-- IMPORTANTE: reemplazá G-XXXXXXXXXX por tu ID de medición real (te lo da analytics.google.com) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-XXXXXXXXXX");
+    </script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header-content">
+        <div class="brand">
+          <span class="name">Alejandro García</span>
+          <span class="role">IT Analyst — Redes, Datos y Control de Gestión</span>
+        </div>
+
+        <div class="nav-wrapper">
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#experience">Experiencia</a></li>
+      <li><a href="#education">Educación</a></li>
+      <li><a href="#tools">Skills</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#contact" class="nav-cta">Contacto</a></li>
+    </ul>
+  </nav>
+  <button class="menu-toggle">
+  <i class="fa-solid fa-bars"></i>
+</button>
+
+  <!-- BOTON DARK MODE -->
+  <button id="theme-toggle" class="theme-toggle">
+    <i class="fa-solid fa-moon"></i>
+  </button>
+  <div class="theme-hint" id="theme-hint">Podés cambiar a modo oscuro 🌙</div>
+</div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <div class="eyebrow">IT ANALYST — SANTA FE, AR</div>
+          <h2>18 años leyendo redes.<br />Ahora los datos cuentan la historia.</h2>
+
+          <p class="hero-description">
+          Analista IT en Telecom Personal Argentina, con paso por distintos sectores de la operación y formación universitaria en tecnología, contabilidad y auditoría. Enfocado en el análisis de datos, la mejora continua y el desarrollo de soluciones propias.
+</p>
+
+          <svg class="signal" viewBox="0 0 480 44" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,22 L45,22 L56,7 L67,37 L78,11 L89,33 L100,22 L150,22 L161,6 L172,38 L183,13 L194,31 L205,22 L255,22 L266,9 L277,36 L288,15 L299,29 L310,22 L480,22" />
+            <circle class="signal-dot" cx="172" cy="38" r="3" />
+          </svg>
+
+          <ul class="hero-points">
+            <li>Paso por atención comercial, redes, soporte operativo y análisis de eventos en Telecom Personal Argentina</li>
+            <li>Manuales e investigaciones de lanzamientos de aplicaciones internas; colaboración en informes gerenciales</li>
+            <li>Apps propias para necesidades reales: gestión educativa, organización de torneos, diagnóstico vehicular</li>
+            <li>Integración de APIs y bases de datos para soluciones funcionales</li>
+            <li>Formación en contabilidad, auditoría y tecnología aplicada a análisis y control</li>
+            <li>Gestión contable independiente (monotributo, facturación, ingresos brutos) para clientes particulares</li>
+          </ul>
+
+          <div class="hero-buttons">
+        </div>
+
+        <div class="card-media">
+            <a href="#contact" class="btn">Contact</a>
+            <a href="assets/img/professional-cv-ajg.pdf" class="btn" download
+            >Download CV</a
+            >
+          </div>
+        </div>
+
+        <div class="hero-img">
+          <img src="./assets/img/perfil.jpg" alt="Foto perfil" />
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section id="experience" class="section section-light">
+      <div class="container">
+        <h2>Experiencia Profesional</h2>
+        <span class="section-tag">// registro cronológico — Personal / Telecom Argentina</span>
+
+        <div class="timeline">
+          <div class="t-item highlight">
+            <span class="t-date">2025 — ACTUALIDAD</span>
+            <div class="t-role">SVC - Soporte y Habilitación</div>
+            <div class="t-org">Telecom Personal Argentina</div>
+            <p class="t-desc">
+                Habilitación y configuración de equipos, gestión sobre cajas
+                FLOW digitales, híbridas y full ip. Gestión de estados de órdenes de trabajo. Manejo de CRM Salesforce Conext y escalamiento de incidencias a segundo nivel. Elaboración de manuales e investigaciones para lanzamientos de aplicaciones internas, y colaboración en informes gerenciales.
+              </p>
+          </div>
+
+          <div class="t-item">
+            <span class="t-date">2024 — 2025</span>
+            <div class="t-role">DEER - Análisis de Eventos</div>
+            <div class="t-org">Telecom Personal Argentina</div>
+            <p class="t-desc">
+                Análisis de incidentes en redes HFC / FTTH, asegurando
+                derivaciones precisas y resolución eficiente.
+              </p>
+          </div>
+
+          <div class="t-item">
+            <span class="t-date">2020 — 2025</span>
+            <div class="t-role">MDA - Soporte Operativo</div>
+            <div class="t-org">Telecom Personal Argentina</div>
+            <p class="t-desc">
+                Soporte en tiempo real a técnicos, configuración de equipos y
+                validación de red.
+              </p>
+          </div>
+
+          <div class="t-item">
+            <span class="t-date">2015 — 2020</span>
+            <div class="t-role">Gestión Red Telecom</div>
+            <div class="t-org">Telecom Personal Argentina</div>
+            <p class="t-desc">
+                Soporte en infraestructura de red y capacitación en despliegue
+                FTTH.
+              </p>
+          </div>
+
+          <div class="t-item">
+            <span class="t-date">2008 — 2015</span>
+            <div class="t-role">Atención Comercial</div>
+            <div class="t-org">Telecom Personal Argentina</div>
+            <p class="t-desc">
+                Atención al cliente y gestión administrativa en sistemas
+                corporativos.
+              </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCACION -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2>Formación Académica</h2>
+        <span class="section-tag">// trayectoria académica</span>
+
+        <div class="timeline">
+          <div class="t-item highlight">
+            <span class="t-date">EN CURSO — FINALIZA 2027</span>
+            <div class="t-role">Licenciatura en Tecnología de la Información</div>
+            <div class="t-org">Universidad Católica de Santa Fe</div>
+            <p class="t-desc">Carrera de 2 años. Primer año prácticamente aprobado en su totalidad.</p>
+          </div>
+
+          <div class="t-item">
+            <span class="t-date">FINALIZADO — DIC. 2025</span>
+            <div class="t-role">
+                Tecnicatura Universitaria en Informática Aplicada al Diseño
+                Multimedia y de Sitios Web
+              </div>
+            <div class="t-org">Universidad Nacional del Litoral</div>
+            <p class="t-desc">Duración: 2 años y medio.</p>
+          </div>
+
+          <div class="t-item">
+            <span class="t-date">PAUSADO — 32/38 MATERIAS</span>
+            <div class="t-role">Contador Público</div>
+            <div class="t-org">Universidad Católica de Santa Fe</div>
+            <p class="t-desc">Interrumpida por motivos personales, a retomar.</p>
+          </div>
+
+          <div class="t-item">
+            <span class="t-date">FINALIZADO</span>
+            <div class="t-role">Auxiliar Bilingüe Español - Inglés</div>
+            <div class="t-org">Instituto San Roque</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HERRAMIENTAS -->
+    <section id="tools" class="section section-light">
+      <div class="container">
+        <h2>Herramientas</h2>
+        <span class="section-tag">// stack técnico</span>
+
+        <div class="tools-list">
+          <div class="tool-item highlight">
+            <div class="tool-icon">
+              <i class="fa-solid fa-building"></i>
+            </div>
+            <div class="tool-info">
+              <h3>Sistemas Corporativos</h3>
+              <p>
+                Salesforce, Field Service Management, Huawei U2000, AMS5520
+                Alcatel, Intraway, ICD, TAU, Toolbox, Itickets, CCIP, ServAssure
+                NXT, Symphonica, SAM, WatchDog, Tambo, Smart, SAP.
+              </p>
+            </div>
+          </div>
+
+          <div class="tool-item">
+            <div class="tool-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="tool-info">
+              <h3>Herramientas Técnicas</h3>
+              <p>
+                MySQL, Android Studio, HTML, Java, JavaScript, CSS, Python,
+                Docker, Apache NetBeans, Eclipse PHP, Visual Studio Code,
+                Firestore, Firebase, APIs, WordPress, GitHub, Postman, Excel avanzado, Power BI, Tango Gestión.
+              </p>
+            </div>
+          </div>
+
+          <div class="tool-item">
+            <div class="tool-icon">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <div class="tool-info">
+              <h3>Productividad y Colaboración</h3>
+              <p>
+                Google Workspace, Slack, Looker, Canva, Bootstrap, Jira,
+                Confluence, Microsoft Teams.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURSOS -->
+    <section class="section">
+      <div class="container">
+        <h2>Cursos y Formación Certificada</h2>
+        <span class="section-tag">// certificaciones</span>
+
+        <div class="courses-list">
+          <div class="course-item highlight">
+            <div class="course-icon">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+            <div class="course-info">
+              <h3>Generative AI Data Analyst Specialization</h3>
+              <p>Vanderbilt University – Coursera</p>
+              <span>2025</span>
+            </div>
+          </div>
+
+          <div class="course-item">
+            <div class="course-icon">
+              <i class="fa-solid fa-building"></i>
+            </div>
+            <div class="course-info">
+              <h3>Capacitación interna — Telecom</h3>
+              <p>SQL & BigQuery · Data Analytics · IA Generativa & Prompting · Looker Studio · Metodologías ágiles</p>
+              <span>2025 - 2026</span>
+            </div>
+          </div>
+
+          <div class="course-item">
+            <div class="course-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div class="course-info">
+              <h3>Introducción a Ciberseguridad</h3>
+              <p>Cisco Networking Academy</p>
+              <span>2025</span>
+            </div>
+          </div>
+
+          <div class="course-item">
+            <div class="course-icon">
+              <i class="fa-brands fa-python"></i>
+            </div>
+            <div class="course-info">
+              <h3>Programación en Python</h3>
+              <p>60 horas - Secretaría de Trabajo</p>
+            </div>
+          </div>
+
+          <div class="course-item">
+            <div class="course-icon">
+              <i class="fa-solid fa-mobile-screen"></i>
+            </div>
+            <div class="course-info">
+              <h3>Desarrollo de Apps Móviles</h3>
+              <p>Universidad Complutense de Madrid</p>
+            </div>
+          </div>
+
+          <div class="course-item">
+            <div class="course-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="course-info">
+              <h3>Argentina Programa</h3>
+              <p>CESSI</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+<section id="projects" class="section section-light">
+  <div class="container">
+    <h2>Proyectos</h2>
+    <span class="section-tag">// trabajo propio</span>
+
+    <div class="video-grid">
+      <!-- PROYECTO 0 — Portfolio Web -->
+      <div class="video-card">
+        <div class="card-text">
+          <h3>Desarrollo Sitio Web PersonalCV</h3>
+          <p>
+            Desarrollo de sitio web orientado a crear un Curriculum Vitae o Portfolio Web estilo Silicon Valley con muestra de enlace a proyectos, estudios y experiencias. Modo oscuro disponible.
+          </p>
+        </div>
+
+        <div class="card-media">
+          <a href="https://github.com/AGTechStudio/portfolio-web" target="_blank">
+            Ver código en GitHub
+          </a>
+
+          <div class="screen-frame">
+            <div class="screen" data-project="personalcv">
+              <img src="assets/img/proyectos/personalcv-1.jpeg" class="active" alt="PersonalCV - Inicio">
+              <img src="assets/img/proyectos/personalcv-2.jpeg" alt="PersonalCV - Experiencia profesional">
+              <img src="assets/img/proyectos/personalcv-3.jpeg" alt="PersonalCV - Formación académica">
+              <img src="assets/img/proyectos/personalcv-4.jpeg" alt="PersonalCV - Cursos y formación certificada">
+              <img src="assets/img/proyectos/personalcv-5.jpeg" alt="PersonalCV - Proyectos (modo oscuro)">
+              <img src="assets/img/proyectos/personalcv-6.jpeg" alt="PersonalCV - Cursos (modo oscuro)">
+              <img src="assets/img/proyectos/personalcv-7.jpeg" alt="PersonalCV - Formación (modo oscuro)">
+            </div>
+          </div>
+          <div class="carousel-dots" data-dots="personalcv">
+            <span class="active"></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROYECTO 1 — Conectado Seguro -->
+      <div class="video-card">
+        <div class="card-text">
+          <h3>Desarrollo Sitio Web</h3>
+          <p>Desarrollo de sitio web orientado a instituciones educativas. Proyecto final de carrera. Universidad Nacional del Litoral.</p>
+        </div>
+
+        <div class="card-media">
+
+          <a href="https://github.com/AGTechStudio/conectado-seguro-web" target="_blank">
+            Ver código en GitHub
+          </a>
+
+          <div class="screen-frame">
+            <div class="screen" data-project="conectadoseguro">
+              <img src="assets/img/proyectos/conectadoseguro-1.jpeg" class="active" alt="Conectado Seguro - Inicio">
+              <img src="assets/img/proyectos/conectadoseguro-2.jpeg" alt="Conectado Seguro - Menú">
+              <img src="assets/img/proyectos/conectadoseguro-3.jpeg" alt="Conectado Seguro - Test">
+              <img src="assets/img/proyectos/conectadoseguro-4.jpeg" alt="Conectado Seguro - Resultado del test">
+              <img src="assets/img/proyectos/conectadoseguro-5.jpeg" alt="Conectado Seguro - Riesgos digitales">
+            </div>
+          </div>
+          <div class="carousel-dots" data-dots="conectadoseguro">
+            <span class="active"></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROYECTO 2 — Campamento Guadalupe -->
+      <div class="video-card">
+        <div class="card-text">
+          <h3>Android App - Campamento Guadalupe</h3>
+          <p>Desarrollo de aplicación para gestión de actividades en campamentos en Android Studio.</p>
+        </div>
+
+        <div class="card-media">
+
+          <a href="https://github.com/AGTechStudio/CampamentoGuadalupe-app" target="_blank">
+            Ver código en GitHub
+          </a>
+
+          <div class="screen-frame">
+            <div class="screen" data-project="campamento">
+              <img src="assets/img/proyectos/campamento-1.jpg" class="active" alt="Campamento Guadalupe - Inicio sesión">
+              <img src="assets/img/proyectos/campamento-2.jpg" alt="Campamento Guadalupe - Menú principal">
+              <img src="assets/img/proyectos/campamento-3.jpg" alt="Campamento Guadalupe - Agregar alumno">
+              <img src="assets/img/proyectos/campamento-4.jpg" alt="Campamento Guadalupe - Gestión de cuotas">
+              <img src="assets/img/proyectos/campamento-5.jpg" alt="Campamento Guadalupe - Listado de materiales">
+              <img src="assets/img/proyectos/campamento-6.jpg" alt="Campamento Guadalupe - Detalle de actividad">
+              <img src="assets/img/proyectos/campamento-7.jpg" alt="Campamento Guadalupe - Rendición de gastos">
+            </div>
+          </div>
+          <div class="carousel-dots" data-dots="campamento">
+            <span class="active"></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROYECTO 3 — Aula Digital -->
+      <div class="video-card">
+        <div class="card-text">
+          <h3>Android App - Aula Digital</h3>
+          <p>Desarrollo de aplicación para gestión educativa en Android Studio.</p>
+        </div>
+
+        <div class="card-media">
+
+          <a href="https://github.com/AGTechStudio/aula-digital-app" target="_blank">
+            Ver código en GitHub
+          </a>
+
+          <div class="screen-frame">
+            <div class="screen" data-project="auladigital">
+              <img src="assets/img/proyectos/auladigital-1.jpeg" class="active" alt="Aula Digital - Inicio">
+              <img src="assets/img/proyectos/auladigital-2.png" alt="Aula Digital - Alumnos">
+              <img src="assets/img/proyectos/auladigital-3.jpeg" alt="Aula Digital - Agregar alumno">
+              <img src="assets/img/proyectos/auladigital-4.png" alt="Aula Digital - Merienda compartida">
+              <img src="assets/img/proyectos/auladigital-5.jpeg" alt="Aula Digital - Entrevistas">
+              <img src="assets/img/proyectos/auladigital-6.png" alt="Aula Digital - Entrevistas realizadas">
+            </div>
+          </div>
+          <div class="carousel-dots" data-dots="auladigital">
+            <span class="active"></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROYECTO 4 — WordPress -->
+      <div class="video-card">
+        <div class="card-text">
+          <h3>Desarrollo Sitio Web en WordPress</h3>
+          <p>Desarrollo de sitio web relacionado al turismo en Punta del Este (UY) en plataforma WordPress.</p>
+        </div>
+
+        <div class="card-media">
+
+          <a href="https://puntadelesteuy1.wordpress.com/" target="_blank">
+            Ver sitio web
+          </a>
+
+          <div class="screen-frame">
+            <div class="screen" data-project="wp">
+              <img src="assets/img/proyectos/wp-1.jpeg" class="active" alt="WordPress Punta del Este - Inicio">
+              <img src="assets/img/proyectos/wp-2.jpeg" alt="WordPress Punta del Este - Acerca de">
+              <img src="assets/img/proyectos/wp-3.jpeg" alt="WordPress Punta del Este - Puntos de interés">
+              <img src="assets/img/proyectos/wp-4.jpeg" alt="WordPress Punta del Este - Ubicación">
+              <img src="assets/img/proyectos/wp-5.png" alt="WordPress Punta del Este - Contacto">
+            </div>
+          </div>
+          <div class="carousel-dots" data-dots="wp">
+            <span class="active"></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROYECTO 5 — Torneos Quincho Pavón -->
+      <div class="video-card">
+        <div class="card-text">
+          <h3>Torneos Quincho Pavón</h3>
+          <p>App web (PWA) para organizar los torneos de FC26 entre amigos: sorteo o armado manual de equipos, modo "gana y sigue" individual y en parejas, ranking por noche / mes / año con destacados y perdedores. Datos en tiempo real con Firebase Firestore, instalable desde el celular.</p>
+        </div>
+
+        <div class="card-media">
+
+          <a href="https://github.com/AGTechStudio/torneos-quincho-pavon" target="_blank">
+            Ver código en GitHub
+          </a>
+
+          <div class="screen-frame">
+            <div class="screen" data-project="torneos">
+              <img src="assets/img/proyectos/torneos-1.jpeg" class="active" alt="Torneos Quincho Pavón - Inicio">
+              <img src="assets/img/proyectos/torneos-2.jpeg" alt="Torneos Quincho Pavón - Modos de juego">
+              <img src="assets/img/proyectos/torneos-3.jpeg" alt="Torneos Quincho Pavón - Cargar jugadores">
+              <img src="assets/img/proyectos/torneos-4.jpeg" alt="Torneos Quincho Pavón - Ranking">
+            </div>
+          </div>
+          <div class="carousel-dots" data-dots="torneos">
+            <span class="active"></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROYECTO 6 — AG Scanner -->
+      <div class="video-card">
+        <div class="card-text">
+          <h3>AG Scanner — App Android OBD2</h3>
+          <p>App Android nativa (Kotlin) para conectarse por Bluetooth a un adaptador ELM327: ~20 parámetros en vivo (RPM, velocidad, temperaturas, voltaje), lectura y borrado de códigos de falla (DTCs), datos del vehículo, grabación a CSV con marcado de eventos, y una consola para mandar comandos AT/OBD crudos y ver la respuesta tal cual la manda el adaptador.</p>
+        </div>
+
+        <div class="card-media">
+
+          <a href="https://github.com/AGTechStudio/AGScanner" target="_blank">
+            Ver código en GitHub
+          </a>
+
+          <div class="screen-frame">
+            <div class="screen" data-project="agscanner">
+              <img src="assets/img/proyectos/agscanner-1.jpeg" class="active" alt="AG Scanner - Datos en vivo">
+              <img src="assets/img/proyectos/agscanner-2.jpeg" alt="AG Scanner - Códigos de falla">
+              <img src="assets/img/proyectos/agscanner-3.jpeg" alt="AG Scanner - Info del vehículo">
+            </div>
+          </div>
+          <div class="carousel-dots" data-dots="agscanner">
+            <span class="active"></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- CONTACTO -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contacto</h2>
+        <span class="section-tag">// hablemos</span>
+
+        <div class="socials">
+          <a href="mailto:ajgarcia@personal.com.ar"
+            ><i class="fa-solid fa-envelope"></i> Email</a
+          >
+          <a
+            href="https://www.linkedin.com/in/alejandro-javier-garc%C3%ADa-a60094220/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/AGTechStudio" target="_blank">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+          <a href="https://wa.me/+543424451477?text=Hola%20Alejandro,%20quiero%20contactarme%20con%20vos" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 Alejandro García</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
